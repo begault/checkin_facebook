@@ -1,0 +1,11 @@
+<h1>Show</h1>
+
+<%= @res[:data].to_json %>
+
+<h2>User : </h2>
+
+<%= @user[:id] %>
+
+<br/><br/>
+   
+<%= link_to "Like this post", :action=>"post", :id=>@id, :type=>"checkins" %>

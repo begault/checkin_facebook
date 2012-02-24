@@ -1,0 +1,11 @@
+
+
+<% if cookies[:access_token] %>
+<%= cookies[:access_token] %>
+<% else %>
+<%= link_to "Login", @oauth_url %>
+<% end %>
+
+<br />
+
+<%= link_to "show", :action => :show, :id=>"me", :type=>"feed" %>
